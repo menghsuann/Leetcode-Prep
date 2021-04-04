@@ -3,7 +3,7 @@ class Solution:
         #extreme case
         if m == n == 1:
             return 1
-        #set up recursion conditions
+        #set up recursion conditions: intialize all col, row to 1
         dp = [[1]*m]*n
         #for loop: sum of left and up; can only move either down or right
         for row in range(1, len(dp)):
