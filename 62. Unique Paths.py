@@ -6,6 +6,7 @@ class Solution:
         #set up recursion conditions: intialize all col, row to 1
         dp = [[1]*m]*n
         #for loop: sum of left and up; can only move either down or right
+        #range from 1 to len(dp): the first col is already 1; only need to add the box at the right down; same for the row
         for row in range(1, len(dp)):
             for col in range(1, len(dp[row])):
                 dp[row][col] = dp[row-1][col] + dp[row][col-1]
