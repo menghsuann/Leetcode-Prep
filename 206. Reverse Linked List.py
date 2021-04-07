@@ -5,7 +5,7 @@
 #         self.next = next
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-        #create dummy to store temp list
+        #create dummy(null) to store temp list
         dummy = ListNode(float("inf"))
         #check if head is valid
         while head:
