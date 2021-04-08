@@ -19,6 +19,6 @@ class Solution:
             curr = curr.next
         #if 1 one the list is null
         curr.next = l1 or l2
-        #return the full list
+        #return the full list after the starting point dummy
         return dummy.next
      #https://www.youtube.com/watch?v=Z7VOBq6S5n8
