@@ -7,7 +7,7 @@ class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         nodes = []
         #returning result
-        dummy = ListNode(-1)
+        dummy = ListNode(-1)#沒有指向哪裡
         head = dummy
         #1. save all values in nodes by 遍歷給我們的linked list，把值全部存在一個新的list
         for list in lists:
@@ -16,9 +16,9 @@ class Solution:
                 nodes.append(list.val)
                 #update pointer
                 list = list.next
-        #2. sort the new linked list and save to another new list
+        #2. sort the new list and save to another new linked list
         for val in sorted(nodes):
-            head.next = ListNode(val)#returning a linked list; not only val
+            head.next = ListNode(val)#returning a linked list; not only val 指向sorted好的值
             head = head.next #update pointer
         #3. return the new linked list
         return dummy.next
