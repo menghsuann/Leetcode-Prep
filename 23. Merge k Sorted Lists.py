@@ -14,7 +14,7 @@ class Solution:
             #avoid list is null
             while list:
                 nodes.append(list.val)
-                #update the pointer
+                #update pointer
                 list = list.next
         #2. sort the new linked list and save to another new list
         for val in sorted(nodes):
