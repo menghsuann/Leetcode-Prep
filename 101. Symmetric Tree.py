@@ -9,8 +9,8 @@ class Solution:
         #extreme case
         if root is None:
             return True
-        #recursive function
-        return self.ifSym(root.left, root.right)
+        #recursive function(add self before function)
+        return self.ifSym(root.left, root.right) #start with root(need to define which left, right)
     
     def ifSym(self, left, right):
         #extreme case still true
@@ -19,7 +19,7 @@ class Solution:
         #false condition
         if left is None or right is None or left.val != right.val:
             return False
-        #recursive function for child
+        #recursive function for child(add self before function)
         return self.ifSym(left.left, right.right) and self.ifSym(left.right, right.left)
         
        #https://www.youtube.com/watch?v=ZXi6HLVe4uk
