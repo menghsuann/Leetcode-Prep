@@ -11,3 +11,4 @@ class NumArray:
 # obj = NumArray(nums)
 # param_1 = obj.sumRange(left,right)
 # list slicing O(n)
+# https://www.youtube.com/watch?v=pujaCH4UjYw
