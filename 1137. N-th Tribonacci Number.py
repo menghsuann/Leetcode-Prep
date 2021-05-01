@@ -16,4 +16,5 @@ def tribonacci(self, n: int) -> int:
         return dp[n]
 #O(n)
 #create a dp list
-#add previous three values so the current value become to store the current result.
+#add previous three values so the current value become to store the current result
+#We iterate all dp array, it will cost O(n), each value will add up last two value as result, it will cost (1+3), in total will be O(n+3n) --> O(n)
