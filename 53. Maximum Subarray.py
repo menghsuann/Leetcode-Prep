@@ -12,3 +12,4 @@ class Solution:
         return global_max
     
 #https://www.youtube.com/watch?v=eQGgk8zwIGI
+#O(n): We iterate all dp array, it will cost O(n), each current value will compare with the sum of current value and last value, it will cost (1+1), in total will be O(n+n) --> O(n)
